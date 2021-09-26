@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "title": "Program languages used in Australia",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/SA4_2021_AUST_GDA2020.json",
+        "format": {"type": "topojson", "feature": "SA4_2021_AUST_GDA2020"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/listings_used.csv"
+      },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {
+          "field": "Python",
+          "type": "quantitative",
+          "scale": {"domain": [1, 614]}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
