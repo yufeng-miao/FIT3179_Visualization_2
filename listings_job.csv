@@ -1,0 +1,210 @@
+﻿jobSubClassification,language,position
+Actuarial ,R,10
+Actuarial ,Python,11
+Actuarial ,Matlab,0
+Actuarial ,SQL,10
+Actuarial ,C,0
+Actuarial ,Scala,0
+Actuarial ,Tableau,3
+Actuarial ,Java,0
+Actuarial ,Hadoop,0
+Actuarial ,SAS,3
+Actuarial ,Spark,0
+Analysis & Reporting ,R,43
+Analysis & Reporting ,Python,40
+Analysis & Reporting ,Matlab,0
+Analysis & Reporting ,SQL,25
+Analysis & Reporting ,C,6
+Analysis & Reporting ,Scala,2
+Analysis & Reporting ,Tableau,11
+Analysis & Reporting ,Java,3
+Analysis & Reporting ,Hadoop,11
+Analysis & Reporting ,SAS,16
+Analysis & Reporting ,Spark,7
+Analysts ,R,31
+Analysts ,Python,32
+Analysts ,Matlab,7
+Analysts ,SQL,29
+Analysts ,C,1
+Analysts ,Scala,5
+Analysts ,Tableau,11
+Analysts ,Java,2
+Analysts ,Hadoop,6
+Analysts ,SAS,7
+Analysts ,Spark,11
+Architects ,R,6
+Architects ,Python,10
+Architects ,Matlab,0
+Architects ,SQL,5
+Architects ,C,0
+Architects ,Scala,2
+Architects ,Tableau,1
+Architects ,Java,2
+Architects ,Hadoop,1
+Architects ,SAS,1
+Architects ,Spark,2
+Biological & Biomedical Sciences ,R,6
+Biological & Biomedical Sciences ,Python,3
+Biological & Biomedical Sciences ,Matlab,2
+Biological & Biomedical Sciences ,SQL,0
+Biological & Biomedical Sciences ,C,1
+Biological & Biomedical Sciences ,Scala,0
+Biological & Biomedical Sciences ,Tableau,0
+Biological & Biomedical Sciences ,Java,2
+Biological & Biomedical Sciences ,Hadoop,0
+Biological & Biomedical Sciences ,SAS,0
+Biological & Biomedical Sciences ,Spark,0
+Business/Systems Analysts ,R,74
+Business/Systems Analysts ,Python,81
+Business/Systems Analysts ,Matlab,6
+Business/Systems Analysts ,SQL,68
+Business/Systems Analysts ,C,10
+Business/Systems Analysts ,Scala,18
+Business/Systems Analysts ,Tableau,22
+Business/Systems Analysts ,Java,10
+Business/Systems Analysts ,Hadoop,20
+Business/Systems Analysts ,SAS,17
+Business/Systems Analysts ,Spark,2
+Compliance & Risk ,R,13
+Compliance & Risk ,Python,13
+Compliance & Risk ,Matlab,0
+Compliance & Risk ,SQL,7
+Compliance & Risk ,C,1
+Compliance & Risk ,Scala,1
+Compliance & Risk ,Tableau,1
+Compliance & Risk ,Java,0
+Compliance & Risk ,Hadoop,1
+Compliance & Risk ,SAS,10
+Compliance & Risk ,Spark,2
+Consultants ,R,106
+Consultants ,Python,120
+Consultants ,Matlab,7
+Consultants ,SQL,88
+Consultants ,C,14
+Consultants ,Scala,41
+Consultants ,Tableau,25
+Consultants ,Java,24
+Consultants ,Hadoop,47
+Consultants ,SAS,32
+Consultants ,Spark,9
+Database Development & Administration ,R,88
+Database Development & Administration ,Python,99
+Database Development & Administration ,Matlab,4
+Database Development & Administration ,SQL,90
+Database Development & Administration ,C,13
+Database Development & Administration ,Scala,20
+Database Development & Administration ,Tableau,32
+Database Development & Administration ,Java,19
+Database Development & Administration ,Hadoop,36
+Database Development & Administration ,SAS,35
+Database Development & Administration ,Spark,7
+Developers/Programmers ,R,106
+Developers/Programmers ,Python,113
+Developers/Programmers ,Matlab,9
+Developers/Programmers ,SQL,80
+Developers/Programmers ,C,18
+Developers/Programmers ,Scala,19
+Developers/Programmers ,Tableau,21
+Developers/Programmers ,Java,18
+Developers/Programmers ,Hadoop,26
+Developers/Programmers ,SAS,15
+Developers/Programmers ,Spark,13
+Digital & Search Marketing ,R,6
+Digital & Search Marketing ,Python,5
+Digital & Search Marketing ,Matlab,4
+Digital & Search Marketing ,SQL,3
+Digital & Search Marketing ,C,0
+Digital & Search Marketing ,Scala,4
+Digital & Search Marketing ,Tableau,4
+Digital & Search Marketing ,Java,0
+Digital & Search Marketing ,Hadoop,2
+Digital & Search Marketing ,SAS,5
+Digital & Search Marketing ,Spark,0
+Engineering - Software,R,56
+Engineering - Software,Python,74
+Engineering - Software,Matlab,2
+Engineering - Software,SQL,50
+Engineering - Software,C,19
+Engineering - Software,Scala,28
+Engineering - Software,Tableau,25
+Engineering - Software,Java,23
+Engineering - Software,Hadoop,26
+Engineering - Software,SAS,15
+Engineering - Software,Spark,17
+"Environmental, Earth & Geosciences ",R,2
+"Environmental, Earth & Geosciences ",Python,3
+"Environmental, Earth & Geosciences ",Matlab,0
+"Environmental, Earth & Geosciences ",SQL,0
+"Environmental, Earth & Geosciences ",C,6
+"Environmental, Earth & Geosciences ",Scala,0
+"Environmental, Earth & Geosciences ",Tableau,0
+"Environmental, Earth & Geosciences ",Java,0
+"Environmental, Earth & Geosciences ",Hadoop,0
+"Environmental, Earth & Geosciences ",SAS,0
+"Environmental, Earth & Geosciences ",Spark,0
+Government - Federal ,R,12
+Government - Federal ,Python,21
+Government - Federal ,Matlab,4
+Government - Federal ,SQL,11
+Government - Federal ,C,8
+Government - Federal ,Scala,7
+Government - Federal ,Tableau,1
+Government - Federal ,Java,5
+Government - Federal ,Hadoop,1
+Government - Federal ,SAS,2
+Government - Federal ,Spark,1
+Government - State ,R,16
+Government - State ,Python,18
+Government - State ,Matlab,4
+Government - State ,SQL,11
+Government - State ,C,3
+Government - State ,Scala,0
+Government - State ,Tableau,3
+Government - State ,Java,3
+Government - State ,Hadoop,2
+Government - State ,SAS,3
+Government - State ,Spark,1
+Market Research & Analysis ,R,10
+Market Research & Analysis ,Python,5
+Market Research & Analysis ,Matlab,3
+Market Research & Analysis ,SQL,9
+Market Research & Analysis ,C,0
+Market Research & Analysis ,Scala,3
+Market Research & Analysis ,Tableau,3
+Market Research & Analysis ,Java,1
+Market Research & Analysis ,Hadoop,0
+Market Research & Analysis ,SAS,6
+Market Research & Analysis ,Spark,1
+"Mathematics, Statistics & Information Sciences ",R,256
+"Mathematics, Statistics & Information Sciences ",Python,296
+"Mathematics, Statistics & Information Sciences ",Matlab,20
+"Mathematics, Statistics & Information Sciences ",SQL,195
+"Mathematics, Statistics & Information Sciences ",C,33
+"Mathematics, Statistics & Information Sciences ",Scala,75
+"Mathematics, Statistics & Information Sciences ",Tableau,91
+"Mathematics, Statistics & Information Sciences ",Java,32
+"Mathematics, Statistics & Information Sciences ",Hadoop,78
+"Mathematics, Statistics & Information Sciences ",SAS,46
+"Mathematics, Statistics & Information Sciences ",Spark,38
+Modelling & Simulation ,R,6
+Modelling & Simulation ,Python,3
+Modelling & Simulation ,Matlab,1
+Modelling & Simulation ,SQL,6
+Modelling & Simulation ,C,0
+Modelling & Simulation ,Scala,1
+Modelling & Simulation ,Tableau,3
+Modelling & Simulation ,Java,1
+Modelling & Simulation ,Hadoop,1
+Modelling & Simulation ,SAS,4
+Modelling & Simulation ,Spark,0
+Stockbroking & Trading,R,1
+Stockbroking & Trading,Python,11
+Stockbroking & Trading,Matlab,0
+Stockbroking & Trading,SQL,7
+Stockbroking & Trading,C,8
+Stockbroking & Trading,Scala,0
+Stockbroking & Trading,Tableau,0
+Stockbroking & Trading,Java,0
+Stockbroking & Trading,Hadoop,0
+Stockbroking & Trading,SAS,0
+Stockbroking & Trading,Spark,0
