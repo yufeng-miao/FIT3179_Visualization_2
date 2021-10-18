@@ -1,0 +1,226 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+    {
+      "width": 1000,
+      "height": 800,
+      "title": "Programming language distribution in Australia in 2019-2021",
+      "projection": {
+        "type": "mercator"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/SA4_2021_AUST_GDA2020.json",
+            "format": {
+              "type": "topojson",
+              "feature": "SA4_2021_AUST_GDA2020"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#ffdead",
+            "stroke": "white"
+          }
+        },
+        {
+      "data": {"url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/listings_used.csv"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": {"type": "circle", "color": "white","opacity":0}},
+        {
+          "mark": {"type": "text", "dx": -25,"dy":-10},
+          "encoding": {"text": {"field": "city", "type": "nominal"}}
+        }
+      ]
+    },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/listings_used.csv"
+          },
+          "mark": {
+            "type": "circle"
+          },
+
+          "encoding": {
+            "color": {
+              "condition": {
+            "param": "brush",
+                "title": "Programming Language",
+                "field": "ProgramLanguage",
+                "type": "nominal",
+                "scale": {
+                  "domain": [
+                    "R",
+                    "Python",
+                    "SQL",
+                    "Scala",
+                    "Tableau",
+                    "Hadoop",
+                    "SAS",
+                    "Spark",
+                    "Java",
+                    "C",
+                    "Matlab",
+                    "Others"
+                  ],
+                  "range": [
+                    "#ADD8E6",
+                    "#F08080",
+                    "#E0FFFF",
+                    "#FAFAD2",
+                    "#D3D3D3",
+                    "#90EE90",
+                    "#FFB6C1",
+                    "#FFA07A",
+                    "#20B2AA",
+                    "#87CEFA",
+                    "#8470FF",
+                    "#778899"
+                  ]
+                }
+              },
+              "value": "lightgray"
+
+            },
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+      {"field": "city", "type": "ordinal", "title": "City"},
+      {"field": "NumberofPositions", "type": "quantitative", "title": "Number of Positions"},
+      {"field": "ProgramLanguage", "type": "ordinal", "title": "Language"}
+    ],
+            "size": {
+              "title": "Number of Job Positions",
+              "field": "NumberofPositions",
+              "type": "quantitative",
+              "scale": {
+                "type": "threshold",
+                "domain": [
+                  10,
+                  30,
+                  50,
+                  100,
+                  200,
+                  300
+                ],
+                "range": [
+                  50,
+                  150,
+                  300,
+                  500,
+                  700,
+                  900,
+                  1200
+                ]
+              }
+            }
+          },
+      "params": [{
+        "name": "brush",
+        "select": "interval"
+      }],
+      "transform": [{"filter": {"param": "click"}}]
+        }
+      ]
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/listings_used.csv"
+      },
+      "title": "Total programming language needed in Australia in 2019-2021",
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "click",
+            "title": "Programming Language",
+            "field": "ProgramLanguage",
+            "scale": {
+              "domain": [
+                "R",
+                "Python",
+                "SQL",
+                "Scala",
+                "Tableau",
+                "Hadoop",
+                "SAS",
+                "Spark",
+                "Java",
+                "C",
+                "Matlab",
+                "Others"
+              ],
+              "range": [
+                "#ADD8E6",
+                "#F08080",
+                "#E0FFFF",
+                "#FAFAD2",
+                "#D3D3D3",
+                "#90EE90",
+                "#FFB6C1",
+                "#FFA07A",
+                "#20B2AA",
+                "#87CEFA",
+                "#8470FF",
+                "#778899"
+              ]
+            }
+          },
+          "value": "lightgray"
+        },
+        "x": {"title": "Number of Job Positions","field": "NumberofPositions", "aggregate":"sum"},
+        "y": {"title": "Programming Language", "field": "ProgramLanguage"},
+        "tooltip": [
+      {"field": "NumberofPositions", "type": "quantitative", "title": "Number of Positions"},
+      {"field": "ProgramLanguage", "type": "ordinal", "title": "Language"}
+    ]
+      },
+      "width": 1000,
+
+      "mark": "bar",
+
+
+    "params": [{
+        "name": "click",
+        "select": {"type": "point", "encodings": ["color"]}
+      }],
+      "transform": [{"filter": {"param": "brush"}}]
+
+
+    },
+    {
+  "data": {"url": "https://raw.githubusercontent.com/yufeng-miao/FIT3179_Visualization_2/master/listings_job.csv"},
+  "mark": "rect",
+  "width": 1000,
+  "height": 500,
+      "title": "Area distribution of Programming Languages used in Australia in 2019-2021",
+  "encoding": {
+    "x": {"title": "Area of application","field": "jobSubClassification", "type": "ordinal", "axis": {"labelAngle": -40}},
+    "y": {"title": "Programming language","field": "language", "type": "ordinal"},
+    "color": {"aggregate": "sum", "field": "position", "type": "quantitative"},
+    "tooltip": [
+      {"field": "jobSubClassification", "type": "ordinal", "title": "Job name"},
+      {"field": "language", "type": "ordinal", "title": "Programming Language"},
+      {"aggregate": "sum", "field": "position", "type": "quantitative", "title": "Number of Job Positions"}
+    ]
+  }
+
+}
+
+
+
+
+
+  ],
+  "config": {}
+}
